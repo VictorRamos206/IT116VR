@@ -28,7 +28,7 @@
 
 
                 </p>
-
+                <!-- This is the button element  -->
 
                 <button >Submit Button</button>
 
@@ -38,6 +38,7 @@
     </section>
 
     <section>
+        <!--  -->
         <h1>Query Strings</h1>
             <hr>
             <!--  -->
@@ -75,45 +76,81 @@
         <!--  -->
             <h1>Radio Buttons</h1>
                 <form action="birds">
-                    <label for="agree">I agree to everything</label>
-                    <input type="checkbox" name="agree_tos" id="agree">
+                         <label for="agree">I agree to everything</label>
+                         <input type="checkbox" name="agree_tos" id="agree">
                     
                     <p>
                         <label for="s">Small</label>
-                        <input type="radio" name="size" id="s" value="s">
+                        <input type="radio" name="size" id="s" value="Small">
 
                         <label for="m">Medium</label>
-                        <input type="radio" name="size" id="m" value="m">
+                        <input type="radio" name="size" id="m" value="Medium">
 
                         <label for="l">Large</label>
-                        <input type="radio" name="size" id="l" value="l">
+                        <input type="radio" name="size" id="l" value="Large">
 
                         
                     </p>
-                        <button>Submit</button>
+                        
 
                     <!--  -->
-                </form>
+                
                     <p>
                         <label for="fav color">what is ur favorite color</label>
                         
                         <select name="favorite" id="fav color">
+                            <option value="Default Color">Default Color</option>
                             <option value=Red>Red</option>
 
                             <option value=Blue>Blue</option>
 
                             <option value=White>White</option>
 
+                        </select>
+                    </p>
+                    <!-- Here is my input element that currently is linked with my label to create a scroll bar -->
+                    <p>
+                        <label for="scroll">Vic Scroll Bar</label> 
+                        <input type="range" id="scroll" min="25" max="30" name="scrollbar">
+
+
 
                     </p>
+                    <!--here is my text area that is linked with my label.   -->
+                    <p>
 
+                        <label for="request">type into here</label>
+                        <textarea id="request" name="reqs" rows="20" cols="25" placeholder="Type Here">Type Here</textarea>
 
+                    </p>
+                    <button>Submit</button>
+            </form>
     </section>
 
+    <hr>
+        <!--  -->
+    <section>
+        <h2>Form Validations</h2>
+            <form action="/bananas">
+                <!--  -->
+                <label for="required1"></label>
+                <input type="text" name="hungry" id="required1" required>
+                <!--  -->
 
+                <label for="length"></label>
+                <input type="text" name="Lengthy" id="length" minlength="5" maxlength="10">
 
+               
+             <p>
+                <input type="email" required>
+                    
 
-    
+             </p>
+                <button type="submit">Submit</button>
+            </form>
+                
+
+    </section>
 
 
 </body>
