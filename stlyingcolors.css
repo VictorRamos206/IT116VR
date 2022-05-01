@@ -1,0 +1,23 @@
+
+/* i this file is linked with */
+/* here is my selector to make my header one green */
+h1{
+    color: green;
+}
+/* this selector makes my header 3 green */
+h3{
+    color: purple;
+}
+
+p{
+    color: pink;
+    background-color: green;
+}
+/* here I have my blue button with white text */
+button{
+    color: white;
+    background-color: blue;
+
+
+}
+
