@@ -1,0 +1,45 @@
+/* this universal selector chooses all the objects on the html file */
+/* *{
+
+    color: white;
+    background-color: darkgreen;
+
+} */
+/* this is a elemnt slector the cahnges the color of everyhting in the body */
+body{
+
+    background-color: blanchedalmond;
+
+}
+/* this selector changes the color to the button */
+
+button{
+
+    font-size:30px;
+
+
+}
+/* this is multiple headers being changed at once */
+h1,h2{
+
+    color: crimson;
+
+}
+/* this is an id selector which only changes one unique id element so it doesnt change all of the buttons */
+
+#signup{
+
+    background-color: pink;
+    color: blue;
+}
+
+/* here i used . which is class in order to add color too only wednsday */
+.SCC{
+    color: brown;
+}
+/*  */
+
+.post a{
+
+    color: hotpink;
+}
