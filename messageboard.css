@@ -26,7 +26,7 @@ h1,h2{
 
 }
 /* this is an id selector which only changes one unique id element so it doesnt change all of the buttons */
-
+/* used the hashtag to pic out a certain ID */
 #signup{
 
     background-color: pink;
@@ -37,9 +37,61 @@ h1,h2{
 .SCC{
     color: brown;
 }
-/*  */
+/*  here i picked out a certain word to change the color by using a period which found the class post and then used a to find 
+the href that i was choosing to change*/
 
 .post a{
 
     color: hotpink;
 }
+
+/*  here i searched for the footer and sepficied the href with nintendo to change the color of the nintendo word on my messageboard*/
+footer >a{
+
+    color: blueviolet;
+}
+/* here i used input type to find the password box and change the color of the text to purple */
+
+input[type="password"]{
+
+    color: blueviolet;
+}
+
+input[type="text"]{
+
+    color: red;
+}
+
+/*  a with the [] and the *= makes it look for a specific word/characters to change for example google */
+/* basically looks for any href with the word google in it */
+a[href*="google"]{
+
+    color: darkgoldenrod;
+}
+/* when i hover over a button it changes the color of the button */
+/* this only changes the colors of the buttons that dont already have a specific ID */
+button:hover{
+
+    background-color: red;
+    color: aquamarine;
+}
+/* i called the post class so now when i click on the button with post class they turn green */
+.post button:active{
+
+    background-color: green;
+}
+/* this is a psuedo element that helped me choose a certain first letter to change in the h2 only. 
+so i changed the font size of the first letter of h2 */
+h2::first-letter{
+    font-size: 45px;
+}
+/* here i used the psuedo to pick out the first sentance of my paragraph and change the color of the background */
+p::first-line{
+
+    background-color: deeppink;
+}
+
+
+
+/* # is to choose id 
+period is class */
