@@ -1,3 +1,52 @@
-.universityofwashington{
- color: crimson;
+.Crim{
+    color: crimson;
+}
+/* here is an example of me using period to grab my class from my html so i only 
+edit this specific list item. If I didnt use class It would change the color of all my list items. */
+.Green{
+    color: green;
+
+}
+
+.Yellow{
+    color:rgb(127, 127, 9);
+
+}
+
+.Red{
+    color: red;
+
+}
+
+.Orange{
+    color: orange;
+
+}
+
+.Red{
+
+    color:red;
+
+}
+/* Here I used the hashtag in order to use the ID in my html
+so that I can edit the color of one particular button and not all the buttons. */
+
+#GREENB{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border-color: green;
+}
+
+#REDB{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border-color:red;
+}
+/* here i just changed the size and style of the h1 */
+h1{
+font-size: 25px;
+font-style: oblique;
+
 }

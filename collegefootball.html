@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- here i linked my html to my css stylesheet -->
     <link rel="stylesheet" href="collegefootball.css">
 </head>
 <body>
     <h1>Victors Best College Football Teams List</h1>
-        <ol>
-            <li class="universityofwashington">University of Washington</li>
-            <li class="LSU">Lousiana State University</li>
-            <li class="OSU">Ohio State University</li>
-            <li class="ND">University of Norte Dame</li>
-            <li class="OK">Oklahoma Sooners</li>
-            <li class="TL">Texas Longhorns</li>
-            <li class="USC">USC Trojans</li>
-            <li class="NC">Nebraska Cornhuskers</li>
-            <li class="TV">Tennesse Volunteers</li>
-            <li class="VT">Virginia Tech</li>
+        <section>
+            <!-- ordered list -->
+            <ol>
+                <!-- here are my list items that have classes that are connected together with css in order to 
+                change the color of specific Li at the same time without messing with colors that i dont need to change -->
+                <li class="Crim">University of Washington</li>
+                <li class="Green">Lousiana State University</li>
+                <li class="Yellow">Ohio State University</li>
+                <li class="Red">University of Norte Dame</li>
+                <li class="Crim">Oklahoma Sooners</li>
+                <li class="Red">Texas Longhorns</li>
+                <li class="Orange">USC Trojans</li>
+                <li class="Green">Nebraska Cornhuskers</li>
+                <li class="Red">Tennesse Volunteers</li>
+            </ol>
+        </section>    
+            <!-- here I use the ID to change the color of the buttons into different colors seperately.
+            I have to use ID here since the ID name is unique. Class names can be used multiple times and I dont need that right now for buttons.-->
+    <button id="GREENB">YES I AGREE</button>
+    <button id="REDB">NO I DONT AGREE</button>
 </body>
 </html>
