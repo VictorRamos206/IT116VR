@@ -1,0 +1,23 @@
+
+H1 > a{
+color: maroon;
+font-size: 30px;
+
+}
+/* Here I picked out the Id of  */
+#Yo a{
+    color: orangered;
+}
+
+
+/* Here I chose the id Hey and picked out the anchor tag that i wanted to change to purple */
+#Hey a{
+    color: purple;
+}
+
+#UFC a{
+
+    color: lightblue;
+}
+
+
