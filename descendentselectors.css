@@ -1,10 +1,11 @@
 
+/* here i put an anchor tag in my h1 */
 H1 > a{
 color: maroon;
 font-size: 30px;
 
 }
-/* Here I picked out the Id of  */
+/* Here I picked out the Id of my p element and chose to change the color of the anchor tag  */
 #Yo a{
     color: orangered;
 }
@@ -14,7 +15,7 @@ font-size: 30px;
 #Hey a{
     color: purple;
 }
-
+/* same as above */
 #UFC a{
 
     color: lightblue;
