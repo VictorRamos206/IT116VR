@@ -1,6 +1,6 @@
 
 /* here i put an anchor tag in my h1 */
-H1 > a{
+header > a{
 color: maroon;
 font-size: 30px;
 
