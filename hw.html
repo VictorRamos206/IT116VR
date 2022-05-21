@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrix</title>
+<!-- here I linked my html page to a style sheet page called bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
     <section>
-
-        <div>
-
-
-        </div>
-
-        <div>
-
-
-
-        </div>
-
-
-
-
-    </section>
-    
+        <!-- this container fluid bar will go edge to edge on the screen -->
+        <div class="container-fluid">
+            <!-- this h1 class centers the text,makes the background dark ,adjusts 
+                text size and colored the text white all from bootstrap -->
+            <h1 class="Display-4 text-center container-fluid bg-dark text-white display-4">The Matrix</h1>
+            <!-- this class makes an alert on screen that i added text to create a questons -->
+        <div class="alert alert-danger text-center" role="alert">Are you going to choose the blue pill or the red pill? </div>
+        <div class="text-center">
+            <!-- here i added a button with a class from bootstrap that has text -->
+            <button type="button" class=" btn btn-primary">Take Blue pill</button>
+            <!-- same as a above except its a danger button so its red -->
+            <button type="button" class=" btn btn-danger">Take Red pill</button>
+        </div> 
+        </div> 
+    </section>    
 </body>
 </html>
