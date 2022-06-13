@@ -58,9 +58,10 @@ else {
 // in this block we created a switch then declared the variable that overall runs a log in the console
 const fruit = 'Peach';
 
-
+// key word is fruit 
 switch (fruit) {
-
+// if the expression value matches my case statment then the block of code will run 
+// you use switch statment when you want to work with different states. alot easier to read and work with
     case 'Oranges':
         console.log("Oranges are $0.59 a pound");
         break;

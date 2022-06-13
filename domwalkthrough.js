@@ -1,4 +1,3 @@
-
 /*
 console.dir(document);
 // Gives the domain of the web page.
@@ -26,39 +25,134 @@ console.log(document.all[10])
 /////////////////////
 //GetElementByID
 
-console.log(document.getElementById('header-title'));
+// console.log(document.getElementById('header-title'));
 
-// 
-let headerTitle = document.getElementById('header-title');
-console.log(headerTitle);
+// // 
+// let headerTitle = document.getElementById('header-title');
+// console.log(headerTitle);
 
 
-headerTitle.textContent = "Changed the Title again."
-headerTitle.innerText = "Hello Changed You Again"
+// headerTitle.textContent = "Changed the Title again."
+// headerTitle.innerText = "Hello Changed You Again"
 
-headerTitle.style.color = 'hotpink';
+// headerTitle.style.color = 'hotpink';
 
 /////////////////////////////////////
 //////////GetElementByClassName
 
-var items = document.getElementsByClassName('list-group-item');
+// var items = document.getElementsByClassName('list-group-item');
 
-console.log(items); 
+// console.log(items); 
+
+// // 
+// items[1].style.backgroundColor = 'pink'; 
+// items[1].style.fontWeight = 'bold'; 
+// items[1].textContent = 'Skee Wee'
+// items[1].style.color = 'green';
+
+// items[0].style.backgroundColor = 'red'; 
+// items[0].style.fontWeight = 'bold'; 
+// items[0].textContent = 'Ooooop'
+// items[0].style.color = 'white';
+
+// items[2].style.backgroundColor = 'blue'; 
+// items[2].style.fontWeight = 'bold'; 
+// items[2].textContent = 'Zeee Phi'
+// items[2].style.color = 'white';
 
 // 
-// this changes the first item by specifing which one i want to change
-// with a number for example this is one
-items[1].style.backgroundColor = 'pink'; 
-items[1].style.fontWeight = 'bold'; 
-items[1].textContent = 'Skee Wee'
-items[1].style.color = 'green';
+// for (let i = 1; i <=10; i++) {
+//     console.log(i);
+// }
 
-items[0].style.backgroundColor = 'red'; 
-items[0].style.fontWeight = 'bold'; 
-items[0].textContent = 'Ooooop'
-items[0].style.color = 'white';
+// 
+// for (let i = 0; i <=20; i+=2) {
+//     console.log(i);
+// }
 
-items[2].style.backgroundColor = 'blue'; 
-items[2].style.fontWeight = 'bold'; 
-items[2].textContent = 'Zeee Phi'
-items[2].style.color = 'white';
+// for (let i = 100; i >= 0; i-=2) {
+//     console.log(i);
+// }
+
+// const myDiamonds = ['Snacky','Scary','Lily','IttyBitty','Pinchie', 'Piggy','Lanky','Nibbles','Kibbles'];
+
+// for (let i = 0; i < myDiamonds.length; i++) {
+//     console.log(i, myDiamonds[i]);
+// }
+
+// for(var i = 0; i < items.length; i++) {
+
+//     items[i].style.backgroundColor = 'grey';
+//     items[i].textContent = "Changing the List Items";
+//     items[i].style.color = 'white';
+
+// }
+
+//////////////////////////////////////////////////////////////////////////////
+////////////GetElementByTagName
+
+// var li = document.getElementsByTagName('li');
+
+// console.log(li); 
+// console.log(li[1]);
+
+// li[1].textContent = "Hello 2 Now"; 
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor = 'green';
+// li[1].style.color = 'white'; 
+
+
+// for(var i = 0; i < li.length; i++) {
+
+//     li[i].style.backgroundColor = 'lightgrey';
+//     li[i].textContent = "I Changed The Items From the DOM";
+//     li[i].style.color = 'white'; 
+
+// }
+///////////////////////////////////
+//////
+
+    // // this calls out the main header 
+
+// var header = document.querySelector('#main-header');
+
+    // // and this helps us change the color border to hotpink
+
+//  header.style.borderbottom='solid 4px hotpink';
+
+//  var input = document.querySelector('input');
+//  input.value="I just changed the text value in the input box";
+
+    // //  this calls out the submit button for us to change the value
+//  var submit = document.querySelector('input[type="submit"]');
+// //  submit.value allows us to change the button words
+// submit.value = "HELLO BUTTOn"
+
+    // // acessed the class and chnaged the color to blue
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color  = 'blue';
+    // // accessed the second item and changed the color using otheritem to the color coral
+// var otherItem = document.querySelector('.list-group-item:nth-child(2)');
+// otherItem.style.color = 'coral';
+
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+// used tree to change text words
+titles[0].textContent = 'HELLO I CHANGED TITLE'
+
+// these created two different lists with numbers and seperated them odd and even for us to 
+// use different ones
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+// 
+for (var i = 0; i < odd.length; i++) {
+
+// this allows us to specify which ones to edit whether its od or even 
+    odd[i].style.backgroundColor = "grey";
+    even[i].style.backgroundColor= "green";
+    even[1].style.color= 'whitesmoke';
+    odd[i].style.color='whitesmoke';
+
+
+}
